@@ -1,0 +1,13 @@
+# see the .env file to set the variables used here
+version: "2"
+services:
+  erddap:
+    image: axiom/docker-erddap
+    container_name: erddap
+    volumes:
+      - ./bigParentDirectory:/erddapData
+      - ./config:/usr/local/tomcat/content/erddap
+      - ./datasets:/data
+      - ./xml:/xml
+    ports:
+      - "8090:8080"
