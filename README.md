@@ -1,6 +1,6 @@
-# ERDDAP test setup
+# ERDDAP basics
 
-This repo will help you get started getting a dataset into ERDDAP.
+This repo will help you get started getting a dataset into ERDDAP. It includes a demonstration dataset.
 
 ## Setup
 
