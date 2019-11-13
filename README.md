@@ -5,15 +5,15 @@ This repo will help you get started getting a dataset into ERDDAP.
 ## Setup
 
 - Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
-- put your data files (eg .nc or .csv files) into the datasets folder
 - In this directory, run `docker-compose up`
 - See if it works by going to http://localhost:8090/erddap
 
 ## Configuring
+- put your data files (eg .nc or .csv files) into the 'datasets' folder
 
-`config/datasets.xml` is where the datasets are configured. There are too many options to list here, see https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html for help. Once you have edited it to your liking, make note of the datasetID you are working on.
+- `config/datasets.xml` is where the datasets are configured. There are too many options to list here, see https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html for help. Once you have edited it to your liking, make note of the datasetID you are working on.
 
- - Once you know your 'EDDType', use
+ - Once you know your 'EDDType', use `sh GenerateDatasets.sh` and follow the menu to create a sample datasets.xml snippet which is output to bigParentDirectory/logs folder.
 - To test your configuration, run `sh DasDds.sh` and then type in your dataset ID when prompted.
 
 After a change is made to a dataset, you can either restart erddap with
