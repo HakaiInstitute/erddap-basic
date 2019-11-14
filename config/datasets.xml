@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?><erddapDatasets>
 
-<dataset type="EDDTableFromMultidimNcFiles" datasetID="IOS_CTD_Profiles" active="true">
+<dataset type="EDDTableFromAsciiFiles" datasetID="IOS_CTD_Profiles" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/IOS_CTD_profiles/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
+    <fileDir>/datasets/</fileDir>
+    <fileNameRegex>sample.csv</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
@@ -30,12 +30,13 @@
         <att name="keywords_vocabulary">GCMD Science Keywords</att>
         <att name="license">[standard]</att>
         <att name="sourceUrl">(local files)</att>
-        <att name="subsetVariables">instrument_type, platform, agency, scientist, country</att>
+        <att name="subsetVariables">profile</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
         <att name="START_TIME">null</att>
         <att name="start_time">null</att>
         <att name="summary">IOS CTD datafile. Institute of Ocean Sciences, 9860 West Saanich Road, Sidney, B.C., Canada</att>
         <att name="title">IOS_CTD_Profiles</att>
+        <att name="institution">Hakai</att>
     </addAttributes>
 
     <dataVariable>

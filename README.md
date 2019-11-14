@@ -2,11 +2,13 @@
 
 This repo will help you get started getting a dataset into ERDDAP. It includes a demonstration dataset.
 
+We will install using Docker, which installs ERDDAP into a 'container' on your computer, and avoids the need for you to install and configure all the components that ERDDAP relies on to work, such as Java, Apache, and Tomcat.
+
 ## Setup
 
-- Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
-- In this directory, run `docker-compose up`
-- See if it works by going to http://localhost:8090/erddap
+- Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/). Depending on your operating system, docker-compose may come with Docker
+- `cd` into the directory of this git repo and run `docker-compose up`. This may take a while to run the first time as it needs to dowload the Docker images
+- See if it works by going to http://localhost:8070/erddap
 
 ## Configuring
 - put your data files (eg .nc or .csv files) into the 'datasets' folder
@@ -30,6 +32,6 @@ After a change is made to a dataset, you can either restart erddap with
 
 ## Troubleshooting
 
-- See http://localhost:8090/erddap/status.html for status
+- See http://localhost:8070/erddap/status.html for status
 - See `bigParentDirectory/logs/log.txt` for more information
 - Test your dataset with the `DasDds.sh` script
