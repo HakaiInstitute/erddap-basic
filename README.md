@@ -11,11 +11,18 @@ We will install using Docker, which installs ERDDAP into a 'container' on your c
 - See if it works by going to http://localhost:8070/erddap
 
 ## Configuring
-- put your data files (eg .nc or .csv files) into the 'datasets' folder
 
-- `config/datasets.xml` is where the datasets are configured. There are too many options to list here, see https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html for help. Once you have edited it to your liking, make note of the datasetID you are working on.
+ - put your data files (eg .nc or .csv files) into a new folder in the 'datasets' folder.
 
- - Once you know your 'EDDType', use `sh GenerateDatasets.sh` and follow the menu to create a sample datasets.xml snippet which is output to bigParentDirectory/logs folder.
+ - Run `sh GenerateDatasets.sh`:
+    - use `EDDTableFromAsciiFiles` for .csv files and `EDDTableFromMultidimNcFiles` for netCDF (.nc) files.
+    - 'Starting directory' is your new directory where your files are located, eg: /datasets/sample-dataset
+    - 'File name regex' use '.*' (without the quotes) to match all files in this directory
+
+  If this was successful, it will create a snippet which is output to bigParentDirectory/logs folder as well as to the screen. Paste that snipped into the file `config/datasets.xml`
+
+ - `datasets.xml` is where the datasets are configured. There are too many options to list here, see https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html for help. Once you have edited it to your liking, make note of the datasetID you are working on.
+
 - To test your configuration, run `sh DasDds.sh` and then type in your dataset ID when prompted.
 
 After a change is made to a dataset, you can either restart erddap with
