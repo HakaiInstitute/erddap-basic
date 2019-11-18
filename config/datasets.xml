@@ -3,8 +3,8 @@
 <dataset type="EDDTableFromAsciiFiles" datasetID="IOS_CTD_Profiles" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/</fileDir>
-    <fileNameRegex>sample.csv</fileNameRegex>
+    <fileDir>/datasets/sample-dataset</fileDir>
+    <fileNameRegex>.*\.csv</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
