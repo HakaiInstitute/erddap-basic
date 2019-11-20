@@ -23,7 +23,7 @@ We will install using Docker, which installs ERDDAP into a 'container' on your c
 
  - `datasets.xml` is where the datasets are configured. There are too many options to list here, see https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html for help. Once you have edited it to your liking, make note of the datasetID you are working on.
 
-- To test your configuration, run `sh DasDds.sh` and then type in your dataset ID when prompted.
+- To test your configuration, ERDDAP has a built in tool to debug your dataset, to use it run `sh DasDds.sh` and then type in your dataset ID when prompted.
 
 After a change is made to a dataset, you can either restart erddap with
 `docker-compose restart`, or reload just that dataset by running
@@ -41,4 +41,4 @@ After a change is made to a dataset, you can either restart erddap with
 
 - See http://localhost:8070/erddap/status.html for status
 - See `bigParentDirectory/logs/log.txt` for more information
-- Test your dataset with the `DasDds.sh` script
+- Test your dataset by running the debugging tool - `sh DasDds.sh` and entering the datasetID
