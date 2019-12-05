@@ -1,6 +1,6 @@
 # ERDDAP basics
 
-This repo will help you get started getting a dataset into ERDDAP. It includes a demonstration dataset.
+This repo will help you get started getting a dataset into ERDDAP using [Axiom's ERDDAP Docker image](https://github.com/axiom-data-science/docker-erddap). It includes a demonstration dataset.
 
 We will install using Docker, which installs ERDDAP into a 'container' on your computer, and avoids the need for you to install and configure all the components that ERDDAP relies on to work, such as Java, Apache, and Tomcat.
 
