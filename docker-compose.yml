@@ -5,7 +5,7 @@ services:
     image: axiom/docker-erddap
     container_name: erddap-basic
     volumes:
-      - ./bigParentDirectory:/erddapData
+      - ./logs:/erddapData/logs
       - ./config:/usr/local/tomcat/content/erddap
       - ./datasets:/datasets
       - ./xml:/xml
