@@ -25,13 +25,11 @@ If this was successful, it will create a snippet which is output to `logs` folde
 
 - To test your configuration, ERDDAP has a built in tool to debug your dataset, to use it run `sh DasDds.sh` and then type in your dataset ID when prompted.
 
-After a change is made to a dataset, you can either restart erddap with
-`docker-compose restart`, or reload just that dataset by running
-`sh reload_dataset <your-dataset-id-here>`:
+After a change is made to a dataset, you can restart erddap with `docker-compose restart`
 
 ## Restarting
 
-- Use `docker-compose restart` for this. You _shouldn't_ need to use this for dataset changes but sometimes it helps.
+- Use `docker-compose restart`
 
 ## Stopping
 
