@@ -15,9 +15,9 @@ We will install using Docker, which installs ERDDAP into a 'container' on your c
 - put your data files (eg .nc or .csv files) into a new folder in the 'datasets' folder.
 
 - Run `sh GenerateDatasetsXml.sh` in the terminal from this directory:
-  - use `EDDTableFromAsciiFiles` for .csv files and `EDDTableFromMultidimNcFiles` for netCDF (.nc) files.
-  - 'Starting directory' is your new directory where your files are located, eg: /datasets/sample-dataset .The directory must start with `/datasets` which is linked to the `datasets` folder in this directory
-  - 'File name regex' use '.\*' (without the quotes) to match all files in this directory
+  - Use `EDDTableFromAsciiFiles` for .csv files and `EDDTableFromMultidimNcFiles` for netCDF (.nc) files.
+  - 'Starting directory' is your new directory where your files are located, eg: `/datasets/sample-dataset` .The directory path must start with `/datasets` which is linked to the `datasets` folder in this directory.
+  - Most of these questions can be left blank for now, just press enter to use default values
 
 If this was successful, it will create a snippet which is output to `logs` folder. Paste that snipped into the file `config/datasets.xml`
 
