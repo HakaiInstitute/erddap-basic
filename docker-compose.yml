@@ -5,6 +5,7 @@ services:
     image: axiom/docker-erddap
     container_name: erddap-basic
     volumes:
+      - ./setenv.sh:/usr/local/tomcat/bin/setenv.sh
       - ./logs:/erddapData/logs
       - ./config:/usr/local/tomcat/content/erddap
       - ./datasets:/datasets
