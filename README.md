@@ -51,7 +51,6 @@ After a change is made to a dataset, you can restart erddap with `docker-compose
 
 ## Windows 10 Pro
 
-- Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-- Follow these instructions to [Make docker in WSL talk to Docker for Windows](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+- Install [Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- Follow these instructions to [Make docker in WSL talk to Docker for Windows](https://nickjanetakis.com/blog/a-linux-dev-environment-on-windows-with-wsl-2-docker-desktop-and-more)
 - when Docker asks, give permission to access C drive
-- if you have Windows Home, download [Docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead of Docker for Windows. I haven't tried this setup
