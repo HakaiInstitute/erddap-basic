@@ -2,7 +2,7 @@
 version: "2"
 services:
   erddap:
-    image: axiom/docker-erddap
+    image: axiom/docker-erddap:2.11
     container_name: erddap-basic
     volumes:
       - ./setenv.sh:/usr/local/tomcat/bin/setenv.sh
