@@ -38,12 +38,6 @@ After a change is made to a dataset, you can restart erddap with `docker-compose
 
 ## Troubleshooting
 
-- If you are having issues with characters such as 'μ' or 'È' not working, change the first line of your datasets.xml file to:
-
-```xml
-<?xml version="1.0" encoding="UTF-8" ?>
-```
-
 - run `docker-compose logs -f` to see what erddap is doing
 - See <http://localhost:8070/erddap/status.html> for status
 - See `logs/log.txt` for more information
