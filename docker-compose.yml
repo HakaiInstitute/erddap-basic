@@ -2,12 +2,11 @@
 version: "2"
 services:
   erddap:
-    image: axiom/docker-erddap:2.11
+    image: axiom/docker-erddap:2.18
     container_name: erddap-basic
     volumes:
       - ./logs:/erddapData/logs
       - ./config:/usr/local/tomcat/content/erddap
       - ./datasets:/datasets
-      - ./xml:/xml
     ports:
       - "8070:8080"
